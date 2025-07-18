@@ -63,9 +63,9 @@ export default function Login() {
 
     // Redirection selon le rôle
     if (profile.role === 'admin') {
-      router.push('/admin')
+      router.push('/dashboard/admin')
     } else {
-      router.push('/dashboard')
+      router.push('/dashboard/students')
     }
   }
 
