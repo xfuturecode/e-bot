@@ -21,7 +21,7 @@ export function Sidebar({ className }: { className?: string }) {
       )}
     >
       <div className="flex items-center gap-2 mb-8 px-2">
-        <span className="font-extrabold text-xl tracking-tight">e-Bot</span>
+        <img src="/logo.png" alt="e-Bot Logo" className="h-8 w-auto" />
       </div>
       <nav className="flex-1 flex flex-col gap-2">
         {navItems.map((item) => (

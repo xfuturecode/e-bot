@@ -96,8 +96,12 @@ export default function Home() {
              We are a team of students who are passionate about technology and we are here to help you automate your daily tasks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto">
-              <Button className="flex-1 px-6 py-3 rounded-full bg-gray-900 border border-gray-700 text-gray-200 hover:bg-gray-800 transition font-medium">Request Demo</Button>
-              <Button className="flex-1 px-6 py-3 rounded-full bg-violet-600 text-white hover:bg-violet-700 transition font-semibold shadow">Get Started for Free</Button>
+                <Button asChild className="flex-1 px-6 py-3 rounded-full bg-gray-900 border border-gray-700 text-gray-200 hover:bg-gray-800 transition font-medium">
+                <Link href="/login">Login</Link>
+                </Button>
+                <Button asChild className="flex-1 px-6 py-3 rounded-full bg-violet-600 text-white hover:bg-violet-700 transition font-semibold shadow">
+                <Link href="/signup">Get started for free</Link>
+                </Button>
             </div>
         </motion.div>
         </header>
